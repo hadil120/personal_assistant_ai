@@ -1,0 +1,3 @@
+[submodule "Auto-GPT"]
+	path = Auto-GPT
+	url = https://github.com/Torantulino/Auto-GPT.git
