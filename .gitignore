@@ -1,0 +1,52 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Env virtuel
+env/
+venv/
+ENV/
+.venv/
+
+# Django stuff:
+*.log
+*.pot
+*.pyc
+*.pyo
+*.sqlite3
+db.sqlite3
+
+# Media files (si tu stockes les fichiers uploadés localement)
+media/
+
+# Static files (collectstatic)
+staticfiles/
+
+# Env files
+.env
+
+# VS Code
+.vscode/
+
+# Mac OS
+.DS_Store
+
+# Coverage reports
+htmlcov/
+.coverage
+
+# Pytest cache
+.pytest_cache/
+
+# Celery beat schedule file
+celerybeat-schedule
+
+# MyPy
+.mypy_cache/
+
+# Pycharm
+.idea/
+
+# Logs
+*.log

@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block title %}Interactions IA{% endblock %}
+
+{% block content %}
+<h2>Historique des interactions</h2>
+<ul>
+    {% for interaction in interactions %}
+        <li>
+            <strong>{{ interaction.agent.name }}</strong> — 
+            <em>{{ interaction.timestamp|date:"d M Y H:i" }}</em><br>
+            <strong>Question :</strong> {{ interaction.prompt }}<br>
+            <strong>Réponse :</strong> {{ interaction.response }}
+        </li>
+    {% empty %}
+        <li>Aucune interaction enregistrée.</li>
+    {% endfor %}
+</ul>
+{% endblock %}

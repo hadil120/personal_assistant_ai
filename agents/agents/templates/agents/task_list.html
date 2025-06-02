@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block title %}Tâches{% endblock %}
+
+{% block content %}
+<h2>Tâches attribuées aux agents</h2>
+<ul>
+    {% for task in tasks %}
+        <li><strong>{{ task.title }}</strong> — assignée à : {{ task.agent.name }}</li>
+    {% empty %}
+        <li>Aucune tâche disponible.</li>
+    {% endfor %}
+</ul>
+{% endblock %}

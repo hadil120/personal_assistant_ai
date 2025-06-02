@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block title %}Liste des agents{% endblock %}
+
+{% block content %}
+<h2>Agents enregistrés</h2>
+<ul>
+    {% for agent in agents %}
+        <li><strong>{{ agent.name }}</strong> — rôle : {{ agent.role }}</li>
+    {% empty %}
+        <li>Aucun agent enregistré.</li>
+    {% endfor %}
+</ul>
+{% endblock %}

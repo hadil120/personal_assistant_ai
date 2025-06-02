@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}AI Assistant{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <h1>AI Assistant Agent System</h1>
+        <nav>
+            <a href="{% url 'home' %}">Accueil</a> |
+            <a href="{% url 'agent_list' %}">Agents</a> |
+            <a href="{% url 'task_list' %}">Tâches</a> |
+            <a href="{% url 'interaction_list' %}">Interactions</a>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Interaction</h2>
+<div>
+    <p><strong>Agent :</strong> {{ interaction.agent.name }}</p>
+    <p><strong>Entrée :</strong> {{ interaction.user_input }}</p>
+    <p><strong>Réponse :</strong> {{ interaction.agent_response }}</p>
+    <p><strong>Heure :</strong> {{ interaction.timestamp }}</p>
+</div>
+<a href="{% url 'home' %}">Retour à l'accueil</a>
+{% endblock %}
